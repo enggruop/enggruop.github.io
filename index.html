@@ -57,22 +57,23 @@
 
   section{padding:26px 0; border-top:1px solid var(--line)}
   section h2{
-    font-size:14px; text-transform:uppercase; letter-spacing:.12em;
-    color:var(--accent); margin:0 0 16px; font-weight:700;
+    font-size:16px; text-transform:uppercase; letter-spacing:.12em;
+    color:#2b4a6b; margin:0 0 16px; font-weight:700;
   }
   .item{margin:0 0 18px}
   .item:last-child{margin-bottom:0}
-  .item .h{font-weight:650; font-size:17.5px}
+  .item .h{font-weight:700; font-size:18px}
   .item .sub{color:var(--muted); font-size:15px}
   .item .date{color:var(--muted); font-size:14px; float:right; font-weight:500}
   .item.small .h{font-size:15px; font-weight:600}
   .item.small .sub{font-size:13.5px}
   .item.small .date{font-size:12.5px}
+  .item.nested{margin-left:28px}
   .pub{margin:0 0 16px; padding-left:16px; border-left:3px solid var(--line)}
-  .pub .title{font-weight:600}
+  .pub .title{font-weight:700; font-size:18px; line-height:1.3}
   .pub .venue{color:var(--muted); font-size:15px}
   .pub details{margin-top:7px}
-  .pub summary{cursor:pointer; color:var(--accent); font-size:14px; font-weight:600; list-style:none; outline:none}
+  .pub summary{cursor:pointer; color:var(--accent); font-size:13px; font-weight:600; list-style:none; outline:none}
   .pub summary::-webkit-details-marker{display:none}
   .pub summary::before{content:"▸ "}
   .pub details[open] summary::before{content:"▾ "}
@@ -98,7 +99,6 @@
 
 <nav class="top"><div class="wrap">
   <span class="brand">Hyuk An</span>
-  <a href="#about">About</a>
   <a href="#education">Education</a>
   <a href="#research">Research</a>
   <a href="#experience">Experience</a>
@@ -110,21 +110,11 @@
     <img class="avatar" src="profile.jpg" alt="Hyuk An (안혁)" onerror="this.style.display='none'">
     <div>
       <h1>Hyuk An <span class="kr">(안혁 · 安赫)</span></h1>
-      <p class="role">Master of Public Policy Candidate<br>KDI School of Public Policy and Management</p>
       <p class="meta">Citizenship: Republic of Korea</p>
     </div>
   </div>
-  <p class="lead">My research interests span macroeconomic forecasting, corporate finance, behavioral economics, and applied econometrics — including recent work using large language models in economics and finance.</p>
-  <div class="links">
-    <a href="mailto:hyukan@kdis.ac.kr">✉ hyukan@kdis.ac.kr</a>
-    <a href="https://github.com/enggruop" target="_blank" rel="noopener">⌥ GitHub</a>
-  </div>
+  <p class="lead">I completed the Master of Public Policy program at the KDI School of Public Policy and Management. My research interests are in macroeconomic forecasting, corporate finance, and behavioral economics. Recently, I have been working on papers and projects exploring the impact and applications of large language models in economics and finance. I plan to apply to PhD programs in economics and finance for Fall 2027.</p>
 </div></header>
-
-<section id="about"><div class="wrap">
-  <h2>About</h2>
-  <p class="lead" style="margin-top:0">Hyuk An is a Master of Public Policy candidate at the KDI School of Public Policy and Management. He holds a B.A. in Economics (<em>magna cum laude</em>) from Korea University and spent a semester on exchange at the National University of Singapore. He currently works as a research assistant at the KDI School and is applying to Economics PhD programs for Fall 2027.</p>
-</div></section>
 
 <section id="education"><div class="wrap">
   <h2>Education</h2>
@@ -134,7 +124,7 @@
   <div class="item"><span class="date">Feb 2023</span>
     <div class="h">Korea University</div>
     <div class="sub">B.A. in Economics, <em>magna cum laude</em> · Seoul, South Korea</div></div>
-  <div class="item small"><span class="date">Spring 2022</span>
+  <div class="item small nested"><span class="date">Spring 2022</span>
     <div class="h">National University of Singapore</div>
     <div class="sub">Student Exchange Program · Singapore</div></div>
 </div></section>
@@ -153,41 +143,45 @@
   <h2 style="margin-top:28px">Work in Progress</h2>
   <div class="pub">
     <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6790567" target="_blank" rel="noopener">Simulating Analyst Forecast Behavior using LLMs</a> <span class="tag">working paper</span></div>
-    <div class="venue">An, H., &amp; Lee, S. · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6790567" target="_blank" rel="noopener">SSRN</a> · <a href="https://drive.google.com/file/d/1icXof5-B28zW07UGGWVaa4gBGDLRetKK/view?usp=sharing" target="_blank" rel="noopener">Replication Package</a></div>
+    <div class="venue">with Seohyun Lee · <a href="https://drive.google.com/file/d/1icXof5-B28zW07UGGWVaa4gBGDLRetKK/view?usp=sharing" target="_blank" rel="noopener">Replication Package</a></div>
     <details>
       <summary>Abstract</summary>
       <p class="abstract">We examine whether a commercial large language model (LLM) can match human analysts in numerical earnings per share (EPS) forecasting. Using 121,369 forecasts for 607 Korean listed firms over 2018–2025, we generate paired LLM forecasts utilizing only information publicly available as of the analyst forecast date, with external search disabled. Human analysts remain more accurate on average: median forecast errors are 1.9% of stock price for analysts and 2.3% for the LLM, implying that the LLM underperforms analysts by about 20%. The LLM outperforms consensus forecasts but remains less accurate than analysts’ prior forecasts. The analyst advantage is larger for loss-making, highly leveraged, and smaller firms, as well as for firms with greater analyst disagreement. Comparing model generations under identical prompts, GPT-5.4-nano closes 67.5% of the gap between GPT-4.1-nano and human analysts. Overall, current commercial LLMs do not yet perform on par with human analysts, but their relative performance improves across model generations and is strongest in settings with richer public information and lower uncertainty.</p>
     </details>
   </div>
   <div class="pub">
-    <div class="title">Political Polarization and Differences in Inflation Perceptions <span class="tag">working paper</span></div>
-    <div class="venue">An, H., Lee, C., &amp; Lim, S.</div>
+    <div class="title">Heterogeneous Inflation Perceptions by Political Polarization</div>
+    <div class="venue">with Changkeun Lee and Sumin Lim</div>
+    <div class="venue" style="margin-top:3px"><em>Survey of 2,000 Korean respondents in progress</em></div>
   </div>
 
   <h2 style="margin-top:28px">Conferences</h2>
-  <div class="item"><span class="date">Upcoming</span>
+  <div class="item"><span class="date">2026</span>
     <div class="h">Singapore Economic Conference</div>
     <div class="sub">Singapore</div></div>
 
-  <h2 style="margin-top:28px">Grants &amp; Awards</h2>
+  <h2 style="margin-top:28px">Grants &amp; Scholarships</h2>
   <div class="item"><span class="date">2026 – 2027</span>
-    <div class="h">Master's Student Research Grant</div>
-    <div class="sub">National Research Foundation of Korea (NRF)</div></div>
+    <div class="h">Student Research Grant</div>
+    <div class="sub">National Research Foundation of Korea (NRF) · 12M KRW</div></div>
+  <div class="item"><span class="date">2024 – 2026</span>
+    <div class="h">KDI School Scholarship of Academic Excellence</div>
+    <div class="sub">KDI School · 28M KRW</div></div>
   <div class="item"><span class="date">2020 – 2023</span>
     <div class="h">Humanities 100-Year Scholarship</div>
-    <div class="sub">Ministry of Education, Republic of Korea</div></div>
+    <div class="sub">Ministry of Education, Republic of Korea · 30M KRW</div></div>
 </div></section>
 
 <section id="experience"><div class="wrap">
   <h2>Research Experience</h2>
   <div class="item"><span class="date">May 2026 – Present</span>
-    <div class="h">Research Assistant — Prof. Seohyun Lee</div>
+    <div class="h">Research Assistant to Prof. Seohyun Lee</div>
     <div class="sub">KDI School · <em>Economic Feasibility and Diffusion Potential of AI Automation</em></div></div>
   <div class="item"><span class="date">Apr 2025 – Mar 2026</span>
-    <div class="h">Research Assistant — Prof. Jeong Yeol Kim</div>
-    <div class="sub">KDI School · <em>Collusion under the Radar: An Analysis of Improvements in the Korean Agricultural Auction System</em></div></div>
+    <div class="h">Research Assistant to Prof. Jeong Yeol Kim</div>
+    <div class="sub">KDI School · <em>Collusion under the Radar</em> · <em>An Analysis of Improvements in the Korean Agricultural Auction System</em></div></div>
   <div class="item"><span class="date">Oct 2025 – Feb 2026</span>
-    <div class="h">Research Assistant — Prof. Changkeun Lee</div>
+    <div class="h">Research Assistant to Prof. Changkeun Lee</div>
     <div class="sub">KDI School · <em>Cleansing Effect in the Great Depression</em></div></div>
   <div class="item"><span class="date">Aug – Oct 2025</span>
     <div class="h">Research Assistant</div>
@@ -195,11 +189,16 @@
 
   <h2 style="margin-top:28px">Teaching Experience</h2>
   <div class="item"><span class="date">Spring 2026</span>
-    <div class="h">Teaching Assistant — Foundations of Public Policy</div>
+    <div class="h">Teaching Assistant, Foundations of Public Policy</div>
     <div class="sub">KDI School</div></div>
   <div class="item"><span class="date">Fall 2025</span>
-    <div class="h">Teaching Assistant — Time Series Econometrics</div>
+    <div class="h">Teaching Assistant, Time Series Econometrics</div>
     <div class="sub">KDI School</div></div>
+
+  <h2 style="margin-top:28px">Military Service</h2>
+  <div class="item"><span class="date">Jan 2023 – Jul 2024</span>
+    <div class="h">Sergeant, Republic of Korea Army</div>
+    <div class="sub">The 1101st Engineer Group, Ground Operations Command</div></div>
 </div></section>
 
 <section id="skills"><div class="wrap">
@@ -207,12 +206,14 @@
   <div class="two">
     <ul class="flat">
       <li>Python</li>
+      <li>R</li>
       <li>Stata</li>
+      <li>MATLAB (Dynare)</li>
     </ul>
     <ul class="flat">
-      <li>Korean — Native</li>
-      <li>English — TOEFL 102</li>
-      <li>Chinese — Basic</li>
+      <li>Korean (Native)</li>
+      <li>English (TOEFL 102)</li>
+      <li>Chinese (Basic)</li>
     </ul>
   </div>
 </div></section>
@@ -221,7 +222,7 @@
   <h2>Contact</h2>
   <p class="lead" style="margin-top:0">Email: <a href="mailto:hyukan@kdis.ac.kr">hyukan@kdis.ac.kr</a><br>
   Phone: <a href="tel:+821082988636">+82 10-8298-8636</a><br>
-  KDI School of Public Policy and Management, Sejong, South Korea</p>
+  Address: <a href="https://www.google.com/maps/place/%EC%84%B8%EC%A2%85%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EC%8B%9C+%EB%82%A8%EC%84%B8%EC%A2%85%EB%A1%9C+263/data=!3m1!4b1!4m6!3m5!1s0x356534c52654f5d7:0x624cbd5758e78cb0!8m2!3d36.4807045!4d127.3103965!16s%2Fg%2F11sb7bzk12?entry=ttu&amp;g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">263 Namsejong-ro, Sejong-si, Republic of Korea</a></p>
 </div></section>
 
 <footer><div class="wrap">
