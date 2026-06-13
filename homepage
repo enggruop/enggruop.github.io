@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyuk An (안혁)</title>
+<meta name="description" content="Hyuk An (안혁) — Master of Public Policy candidate at the KDI School of Public Policy and Management. Research in industrial organization, competition policy, and applied econometrics.">
+<meta property="og:title" content="Hyuk An (안혁)">
+<meta property="og:description" content="Master of Public Policy candidate, KDI School. Industrial organization, competition policy, applied econometrics.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#1c2733; --muted:#5b6b7c; --accent:#1f6feb; --line:#e6eaef;
+    --bg:#ffffff; --soft:#f7f9fb; --maxw:820px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; font-size:17px; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+
+  nav.top{
+    position:sticky; top:0; z-index:10; background:rgba(255,255,255,.9);
+    backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid var(--line);
+  }
+  nav.top .wrap{display:flex; gap:22px; align-items:center; height:56px; flex-wrap:wrap}
+  nav.top .brand{font-weight:700; margin-right:auto}
+  nav.top a{color:var(--muted); font-size:15px; font-weight:500}
+  nav.top a:hover{color:var(--ink); text-decoration:none}
+
+  header.hero{padding:52px 0 28px}
+  .hero-row{display:flex; gap:28px; align-items:center}
+  .avatar{
+    width:132px; height:132px; border-radius:50%; object-fit:cover;
+    border:1px solid var(--line); flex-shrink:0; box-shadow:0 2px 10px rgba(0,0,0,.06);
+  }
+  header.hero h1{font-size:38px; line-height:1.15; margin:0 0 6px; letter-spacing:-.5px}
+  header.hero h1 .kr{color:var(--muted); font-weight:600}
+  header.hero .role{font-size:18px; color:var(--muted); margin:0}
+  .lead{font-size:17px; color:#33414f; margin:18px 0 0}
+  .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+  .links a{
+    display:inline-flex; align-items:center; gap:7px; font-size:14.5px; font-weight:600;
+    border:1px solid var(--line); padding:7px 13px; border-radius:8px; color:var(--ink); background:var(--soft);
+  }
+  .links a:hover{border-color:var(--accent); color:var(--accent); text-decoration:none}
+
+  section{padding:26px 0; border-top:1px solid var(--line)}
+  section h2{
+    font-size:14px; text-transform:uppercase; letter-spacing:.12em;
+    color:var(--accent); margin:0 0 16px; font-weight:700;
+  }
+  .item{margin:0 0 18px}
+  .item:last-child{margin-bottom:0}
+  .item .h{font-weight:650; font-size:17.5px}
+  .item .sub{color:var(--muted); font-size:15px}
+  .item .date{color:var(--muted); font-size:14px; float:right; font-weight:500}
+  .pub{margin:0 0 16px; padding-left:16px; border-left:3px solid var(--line)}
+  .pub .title{font-weight:600}
+  .pub .venue{color:var(--muted); font-size:15px}
+  .tag{
+    display:inline-block; font-size:12.5px; font-weight:600; color:var(--muted);
+    background:var(--soft); border:1px solid var(--line); border-radius:6px; padding:1px 8px; margin-left:6px;
+  }
+  ul.flat{margin:0; padding:0; list-style:none}
+  ul.flat li{padding:3px 0}
+  ul.flat li::before{content:"▸"; color:var(--accent); margin-right:10px; font-size:13px}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:6px 28px}
+  footer{border-top:1px solid var(--line); color:var(--muted); font-size:14px; padding:26px 0 50px}
+  @media(max-width:600px){
+    header.hero h1{font-size:31px}
+    .hero-row{flex-direction:column; text-align:center; align-items:center}
+    .two{grid-template-columns:1fr}
+    .item .date{float:none; display:block; margin-top:2px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <span class="brand">Hyuk An</span>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="hero-row">
+    <img class="avatar" src="profile.jpg" alt="Hyuk An (안혁)" onerror="this.style.display='none'">
+    <div>
+      <h1>Hyuk An <span class="kr">(안혁)</span></h1>
+      <p class="role">Master of Public Policy Candidate<br>KDI School of Public Policy and Management</p>
+    </div>
+  </div>
+  <p class="lead">I study industrial organization, competition policy, and applied econometrics, with recent work on large language models in economics and finance.</p>
+  <div class="links">
+    <a href="mailto:hyukan@kdis.ac.kr">✉ hyukan@kdis.ac.kr</a>
+    <a href="https://github.com/enggruop" target="_blank" rel="noopener">⌥ GitHub</a>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <p class="lead" style="margin-top:0">Hyuk An is a Master of Public Policy candidate at the KDI School of Public Policy and Management. He holds a B.A. in Economics (<em>magna cum laude</em>) from Korea University and spent a semester on exchange at the National University of Singapore. He currently works as a research assistant at the KDI School, and his interests center on competition policy, industrial organization, and applied econometric methods.</p>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education</h2>
+  <div class="item"><span class="date">Sep 2024 – Present</span>
+    <div class="h">KDI School of Public Policy and Management</div>
+    <div class="sub">Master of Public Policy · Sejong, South Korea</div></div>
+  <div class="item"><span class="date">Feb 2023</span>
+    <div class="h">Korea University</div>
+    <div class="sub">B.A. in Economics, <em>magna cum laude</em> · Seoul, South Korea</div></div>
+  <div class="item"><span class="date">Spring 2022</span>
+    <div class="h">National University of Singapore</div>
+    <div class="sub">Student Exchange Program · Singapore</div></div>
+</div></section>
+
+<section id="research"><div class="wrap">
+  <h2>Publications</h2>
+  <div class="pub">
+    <div class="title">A Comparison of Korean and EU Competition Law on the Regulation of Information Exchange</div>
+    <div class="venue">An, H., Chon, H., &amp; Kim, J. Y. · <em>The Korean Journal of Industrial Organization (KJIO)</em></div>
+  </div>
+
+  <h2 style="margin-top:28px">Work in Progress</h2>
+  <div class="pub">
+    <div class="title">Simulating Analyst Forecast Behavior using LLMs <span class="tag">working paper</span></div>
+    <div class="venue">An, H., &amp; Lee, S. · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6790567" target="_blank" rel="noopener">SSRN</a></div>
+  </div>
+
+  <h2 style="margin-top:28px">Grants &amp; Awards</h2>
+  <div class="item"><span class="date">2026 – 2027</span>
+    <div class="h">Master's Student Research Grant</div>
+    <div class="sub">National Research Foundation of Korea (NRF) · 석사과정생연구장려금지원사업</div></div>
+  <div class="item"><span class="date">2020 – 2023</span>
+    <div class="h">Humanities 100-Year Scholarship</div>
+    <div class="sub">Ministry of Education, Republic of Korea</div></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Research &amp; Teaching</h2>
+  <div class="item"><span class="date">Apr 2025 – Present</span>
+    <div class="h">Research Assistant — Prof. Jeong Yeol Kim</div>
+    <div class="sub">KDI School</div></div>
+  <div class="item"><span class="date">Oct 2025 – Present</span>
+    <div class="h">Research Assistant — Prof. Changkeun Lee</div>
+    <div class="sub">KDI School</div></div>
+  <div class="item"><span class="date">Aug – Oct 2025</span>
+    <div class="h">Research Assistant</div>
+    <div class="sub">Korea Information Society Development Institute (KISDI)</div></div>
+  <div class="item"><span class="date">Fall 2025</span>
+    <div class="h">Teaching Assistant — Time Series Econometrics</div>
+    <div class="sub">KDI School</div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills &amp; Languages</h2>
+  <div class="two">
+    <ul class="flat">
+      <li>Python</li>
+      <li>Stata</li>
+    </ul>
+    <ul class="flat">
+      <li>Korean — Native</li>
+      <li>English — Full Professional</li>
+      <li>Chinese — Limited Working</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="lead" style="margin-top:0">Email: <a href="mailto:hyukan@kdis.ac.kr">hyukan@kdis.ac.kr</a><br>
+  KDI School of Public Policy and Management, Sejong, South Korea</p>
+</div></section>
+
+<footer><div class="wrap">
+  © 2026 Hyuk An (안혁) · Built with GitHub Pages
+</div></footer>
+
+</body>
+</html>
