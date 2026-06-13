@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hyuk An (안혁)</title>
-<meta name="description" content="Hyuk An (안혁) — Master of Public Policy candidate at the KDI School of Public Policy and Management. Research in industrial organization, competition policy, and applied econometrics.">
+<meta name="description" content="Hyuk An (안혁) — Master of Public Policy candidate at the KDI School of Public Policy and Management. Research in macroeconomic forecasting, corporate finance, and applied econometrics.">
 <meta property="og:title" content="Hyuk An (안혁)">
-<meta property="og:description" content="Master of Public Policy candidate, KDI School. Industrial organization, competition policy, applied econometrics.">
+<meta property="og:description" content="Master of Public Policy candidate, KDI School. Macroeconomic forecasting, corporate finance, applied econometrics.">
 <meta property="og:type" content="website">
 <style>
   :root{
@@ -42,6 +42,11 @@
   header.hero h1{font-size:38px; line-height:1.15; margin:0 0 6px; letter-spacing:-.5px}
   header.hero h1 .kr{color:var(--muted); font-weight:600}
   header.hero .role{font-size:18px; color:var(--muted); margin:0}
+  header.hero .meta{font-size:14.5px; color:var(--muted); margin:10px 0 0}
+  header.hero .note{
+    display:inline-block; margin:16px 0 0; padding:8px 14px; border-radius:8px;
+    background:#eef4ff; border:1px solid #d3e2ff; color:#1f4e9b; font-size:14.5px; font-weight:600;
+  }
   .lead{font-size:17px; color:#33414f; margin:18px 0 0}
   .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
   .links a{
@@ -60,9 +65,18 @@
   .item .h{font-weight:650; font-size:17.5px}
   .item .sub{color:var(--muted); font-size:15px}
   .item .date{color:var(--muted); font-size:14px; float:right; font-weight:500}
+  .item.small .h{font-size:15px; font-weight:600}
+  .item.small .sub{font-size:13.5px}
+  .item.small .date{font-size:12.5px}
   .pub{margin:0 0 16px; padding-left:16px; border-left:3px solid var(--line)}
   .pub .title{font-weight:600}
   .pub .venue{color:var(--muted); font-size:15px}
+  .pub details{margin-top:7px}
+  .pub summary{cursor:pointer; color:var(--accent); font-size:14px; font-weight:600; list-style:none; outline:none}
+  .pub summary::-webkit-details-marker{display:none}
+  .pub summary::before{content:"▸ "}
+  .pub details[open] summary::before{content:"▾ "}
+  .pub .abstract{font-size:14px; color:#3a4654; margin:8px 0 0; line-height:1.6; text-align:justify}
   .tag{
     display:inline-block; font-size:12.5px; font-weight:600; color:var(--muted);
     background:var(--soft); border:1px solid var(--line); border-radius:6px; padding:1px 8px; margin-left:6px;
@@ -95,11 +109,12 @@
   <div class="hero-row">
     <img class="avatar" src="profile.jpg" alt="Hyuk An (안혁)" onerror="this.style.display='none'">
     <div>
-      <h1>Hyuk An <span class="kr">(안혁)</span></h1>
+      <h1>Hyuk An <span class="kr">(안혁 · 安赫)</span></h1>
       <p class="role">Master of Public Policy Candidate<br>KDI School of Public Policy and Management</p>
+      <p class="meta">Citizenship: Republic of Korea</p>
     </div>
   </div>
-  <p class="lead">I study industrial organization, competition policy, and applied econometrics, with recent work on large language models in economics and finance.</p>
+  <p class="lead">My research interests span macroeconomic forecasting, corporate finance, behavioral economics, and applied econometrics — including recent work using large language models in economics and finance.</p>
   <div class="links">
     <a href="mailto:hyukan@kdis.ac.kr">✉ hyukan@kdis.ac.kr</a>
     <a href="https://github.com/enggruop" target="_blank" rel="noopener">⌥ GitHub</a>
@@ -108,7 +123,7 @@
 
 <section id="about"><div class="wrap">
   <h2>About</h2>
-  <p class="lead" style="margin-top:0">Hyuk An is a Master of Public Policy candidate at the KDI School of Public Policy and Management. He holds a B.A. in Economics (<em>magna cum laude</em>) from Korea University and spent a semester on exchange at the National University of Singapore. He currently works as a research assistant at the KDI School, and his interests center on competition policy, industrial organization, and applied econometric methods.</p>
+  <p class="lead" style="margin-top:0">Hyuk An is a Master of Public Policy candidate at the KDI School of Public Policy and Management. He holds a B.A. in Economics (<em>magna cum laude</em>) from Korea University and spent a semester on exchange at the National University of Singapore. He currently works as a research assistant at the KDI School and is applying to Economics PhD programs for Fall 2027.</p>
 </div></section>
 
 <section id="education"><div class="wrap">
@@ -119,7 +134,7 @@
   <div class="item"><span class="date">Feb 2023</span>
     <div class="h">Korea University</div>
     <div class="sub">B.A. in Economics, <em>magna cum laude</em> · Seoul, South Korea</div></div>
-  <div class="item"><span class="date">Spring 2022</span>
+  <div class="item small"><span class="date">Spring 2022</span>
     <div class="h">National University of Singapore</div>
     <div class="sub">Student Exchange Program · Singapore</div></div>
 </div></section>
@@ -127,36 +142,61 @@
 <section id="research"><div class="wrap">
   <h2>Publications</h2>
   <div class="pub">
-    <div class="title">A Comparison of Korean and EU Competition Law on the Regulation of Information Exchange</div>
+    <div class="title"><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003284083" target="_blank" rel="noopener">A Comparison of Korean and EU Competition Law on the Regulation of Information Exchange</a></div>
     <div class="venue">An, H., Chon, H., &amp; Kim, J. Y. · <em>The Korean Journal of Industrial Organization (KJIO)</em></div>
+    <details>
+      <summary>Abstract</summary>
+      <p class="abstract">The term “stand-alone information exchange” is used to describe an information exchange that is treated as a cartel in its own right. Stand-alone information exchange is distinguishable from traditional cartels in that it may take various forms and, without leaving evidence of an agreement, can generate anti-competitive effects comparable to collusion. Moreover, it may distort the competitive structure before market outcomes fully materialize, thereby producing restrictive effects either on its own or through subsequent conduct. This study structures and compares the Korean and EU competition law regimes that subsume stand-alone information exchange as an unlawful concerted practice along three dimensions: undertakings, coordination and anti-competitive effects of that coordination. In Korea, stand-alone information exchange is regulated within a prescriptive rule-based regulation that confines enforcement to enumerated prohibited categories, requiring an agreement to establish coordination and assessing the anti-competitive effects largely by reference to observed market outcomes. However, this framework fails to take adequate account of the characteristics of information exchange and appears inconsistent with the legislative intent to sanction information exchange as an independent infringement. By contrast, in the EU, information exchange is regulated through a principles-based regulation, the notion of “concerted practice” that is not constrained by the need to prove an agreement, and an assessment of anti-competitive effects that considers the nature and purpose of the information exchanged, enabling more effective control of such conduct. On this basis, this paper evaluates the Korean regulation of information exchange in light of the EU competition law.</p>
+    </details>
   </div>
 
   <h2 style="margin-top:28px">Work in Progress</h2>
   <div class="pub">
-    <div class="title">Simulating Analyst Forecast Behavior using LLMs <span class="tag">working paper</span></div>
-    <div class="venue">An, H., &amp; Lee, S. · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6790567" target="_blank" rel="noopener">SSRN</a></div>
+    <div class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6790567" target="_blank" rel="noopener">Simulating Analyst Forecast Behavior using LLMs</a> <span class="tag">working paper</span></div>
+    <div class="venue">An, H., &amp; Lee, S. · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6790567" target="_blank" rel="noopener">SSRN</a> · <a href="https://drive.google.com/file/d/1icXof5-B28zW07UGGWVaa4gBGDLRetKK/view?usp=sharing" target="_blank" rel="noopener">Replication Package</a></div>
+    <details>
+      <summary>Abstract</summary>
+      <p class="abstract">We examine whether a commercial large language model (LLM) can match human analysts in numerical earnings per share (EPS) forecasting. Using 121,369 forecasts for 607 Korean listed firms over 2018–2025, we generate paired LLM forecasts utilizing only information publicly available as of the analyst forecast date, with external search disabled. Human analysts remain more accurate on average: median forecast errors are 1.9% of stock price for analysts and 2.3% for the LLM, implying that the LLM underperforms analysts by about 20%. The LLM outperforms consensus forecasts but remains less accurate than analysts’ prior forecasts. The analyst advantage is larger for loss-making, highly leveraged, and smaller firms, as well as for firms with greater analyst disagreement. Comparing model generations under identical prompts, GPT-5.4-nano closes 67.5% of the gap between GPT-4.1-nano and human analysts. Overall, current commercial LLMs do not yet perform on par with human analysts, but their relative performance improves across model generations and is strongest in settings with richer public information and lower uncertainty.</p>
+    </details>
   </div>
+  <div class="pub">
+    <div class="title">Political Polarization and Differences in Inflation Perceptions <span class="tag">working paper</span></div>
+    <div class="venue">An, H., Lee, C., &amp; Lim, S.</div>
+  </div>
+
+  <h2 style="margin-top:28px">Conferences</h2>
+  <div class="item"><span class="date">Upcoming</span>
+    <div class="h">Singapore Economic Conference</div>
+    <div class="sub">Singapore</div></div>
 
   <h2 style="margin-top:28px">Grants &amp; Awards</h2>
   <div class="item"><span class="date">2026 – 2027</span>
     <div class="h">Master's Student Research Grant</div>
-    <div class="sub">National Research Foundation of Korea (NRF) · 석사과정생연구장려금지원사업</div></div>
+    <div class="sub">National Research Foundation of Korea (NRF)</div></div>
   <div class="item"><span class="date">2020 – 2023</span>
     <div class="h">Humanities 100-Year Scholarship</div>
     <div class="sub">Ministry of Education, Republic of Korea</div></div>
 </div></section>
 
 <section id="experience"><div class="wrap">
-  <h2>Research &amp; Teaching</h2>
-  <div class="item"><span class="date">Apr 2025 – Present</span>
+  <h2>Research Experience</h2>
+  <div class="item"><span class="date">May 2026 – Present</span>
+    <div class="h">Research Assistant — Prof. Seohyun Lee</div>
+    <div class="sub">KDI School · <em>Economic Feasibility and Diffusion Potential of AI Automation</em></div></div>
+  <div class="item"><span class="date">Apr 2025 – Mar 2026</span>
     <div class="h">Research Assistant — Prof. Jeong Yeol Kim</div>
-    <div class="sub">KDI School</div></div>
-  <div class="item"><span class="date">Oct 2025 – Present</span>
+    <div class="sub">KDI School · <em>Collusion under the Radar: An Analysis of Improvements in the Korean Agricultural Auction System</em></div></div>
+  <div class="item"><span class="date">Oct 2025 – Feb 2026</span>
     <div class="h">Research Assistant — Prof. Changkeun Lee</div>
-    <div class="sub">KDI School</div></div>
+    <div class="sub">KDI School · <em>Cleansing Effect in the Great Depression</em></div></div>
   <div class="item"><span class="date">Aug – Oct 2025</span>
     <div class="h">Research Assistant</div>
     <div class="sub">Korea Information Society Development Institute (KISDI)</div></div>
+
+  <h2 style="margin-top:28px">Teaching Experience</h2>
+  <div class="item"><span class="date">Spring 2026</span>
+    <div class="h">Teaching Assistant — Foundations of Public Policy</div>
+    <div class="sub">KDI School</div></div>
   <div class="item"><span class="date">Fall 2025</span>
     <div class="h">Teaching Assistant — Time Series Econometrics</div>
     <div class="sub">KDI School</div></div>
@@ -171,8 +211,8 @@
     </ul>
     <ul class="flat">
       <li>Korean — Native</li>
-      <li>English — Full Professional</li>
-      <li>Chinese — Limited Working</li>
+      <li>English — TOEFL 102</li>
+      <li>Chinese — Basic</li>
     </ul>
   </div>
 </div></section>
@@ -180,6 +220,7 @@
 <section id="contact"><div class="wrap">
   <h2>Contact</h2>
   <p class="lead" style="margin-top:0">Email: <a href="mailto:hyukan@kdis.ac.kr">hyukan@kdis.ac.kr</a><br>
+  Phone: <a href="tel:+821082988636">+82 10-8298-8636</a><br>
   KDI School of Public Policy and Management, Sejong, South Korea</p>
 </div></section>
 
